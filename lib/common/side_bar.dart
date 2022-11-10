@@ -9,13 +9,14 @@ class SideBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: double.infinity,
+        height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width * 0.2,
         color: Theme.of(context).backgroundColor,
         child: Column(
           children: [
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
+                fit: BoxFit.scaleDown,
                 "assets/logo-no-background-purp.png", // replace with mist logo
                 height: 55.0,
                 filterQuality: FilterQuality.high,
