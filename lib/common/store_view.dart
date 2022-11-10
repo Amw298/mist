@@ -14,28 +14,15 @@ class LibraryView extends StatefulWidget {
 class _LibraryViewState extends State<LibraryView> {
   @override
   Widget build(BuildContext context) {
-    var appbarcolor = Colors.purple;
+    var appbarcolor = Theme.of(context).backgroundColor;
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar( 
         backgroundColor: appbarcolor,
         foregroundColor: appbarcolor,
         shadowColor: Colors.transparent,
       ),
       body: Container(
-          color: const Color.fromARGB(255, 0, 255, 8), child: GameGrid()),
+          color: Theme.of(context).backgroundColor, child: GameGrid()),
     );
-    // return Scaffold(
-    //         appBar: AppBar(
-    //           backgroundColor: Colors.red,
-    //           elevation: 0,
-    //         ),
-    //         body: Expanded(
-    //           child: Container(
-    //             height: double.infinity,
-    //             width: MediaQuery.of(context).size.width * 0.8,
-    //             color: const Color.fromARGB(255, 0, 255, 8),
-    //             child: GameGrid(),
-    //           ),
-    //         ));
   }
 }

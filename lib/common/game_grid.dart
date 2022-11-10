@@ -23,7 +23,6 @@ class GameGrid extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       child:GridView.count(crossAxisCount: 4,
-        crossAxisSpacing: 1.0,
         children: [...games],));
   }
 }

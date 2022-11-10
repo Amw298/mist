@@ -14,12 +14,12 @@ class Store extends StatelessWidget {
       body: Column(children: [
         Expanded(
             child: Row(
-          children:[SideBar(), 
-          const Expanded(child:LibraryView(game:gameDefault ))],
+          children: [
+            SideBar(),
+            const Expanded(child: LibraryView(game: gameDefault))
+          ],
         ))
       ]),
     );
   }
 }
-
-

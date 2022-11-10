@@ -8,6 +8,7 @@ class Game{
 const gameDefault = Game(img:Image(
       image: AssetImage('assets/testinion.jpg'),)
       );
+const logo = Image(image: AssetImage('assets/testinion.jpg'));
 const _games = [
      Game(img:Image(
       image: AssetImage('assets/testinion.jpg'),)

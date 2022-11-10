@@ -11,12 +11,12 @@ class SideBar extends StatelessWidget {
     return Container(
         height: double.infinity,
         width: MediaQuery.of(context).size.width * 0.2,
-        color: const Color.fromARGB(255, 255, 0, 85),
+        color: Theme.of(context).backgroundColor,
         child: Column(
           children: [
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                "assets/testinion.jpg", // replace with mist logo
+                "assets/logo-no-background-purp.png", // replace with mist logo
                 height: 55.0,
                 filterQuality: FilterQuality.high,
               ),
@@ -48,7 +48,7 @@ class _SideBarTab extends StatelessWidget {
     return ListTile(
       leading: Icon(
       iconData,
-      color: Colors.black,
+      color: Theme.of(context).iconTheme.color,
       size: 30.0, ),
       title: Text(
       title,
