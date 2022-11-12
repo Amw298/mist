@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mist/common/db.dart';
-import 'package:mist/common/game_grid.dart';
+import 'package:mist/widgets/db.dart';
+import 'package:mist/widgets/game_grid.dart';
 
 class LibraryView extends StatefulWidget {
   const LibraryView({super.key, required this.game});
@@ -16,7 +16,7 @@ class _LibraryViewState extends State<LibraryView> {
   Widget build(BuildContext context) {
     var appbarcolor = Theme.of(context).backgroundColor;
     return Scaffold(
-      appBar: AppBar( 
+      appBar: AppBar(
         backgroundColor: appbarcolor,
         foregroundColor: appbarcolor,
         shadowColor: Colors.transparent,
