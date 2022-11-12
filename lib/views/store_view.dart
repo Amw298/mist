@@ -1,9 +1,9 @@
-import 'package:mist/common/game_grid.dart';
+import 'package:mist/widgets/game_grid.dart';
 import 'package:flutter/material.dart';
-import 'package:mist/common/side_bar.dart';
+import 'package:mist/widgets/side_bar.dart';
 
-import 'common/db.dart';
-import 'common/library_view.dart';
+import '../widgets/db.dart';
+import '../widgets/library_view.dart';
 
 class Store extends StatelessWidget {
   const Store({super.key});
