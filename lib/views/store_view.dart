@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:mist/widgets/side_bar.dart';
 
 import '../widgets/db.dart';
-import '../widgets/library_view.dart';
+import 'library_view.dart';
 
 class Store extends StatelessWidget {
   const Store({super.key});
