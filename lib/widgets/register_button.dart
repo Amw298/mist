@@ -1,23 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:mist/views/store_view.dart';
+import 'package:mist/views/register_view.dart';
 
 class RegisterButton extends StatelessWidget {
   const RegisterButton({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
-      child: Text(
-        "Register",
-        style: TextStyle(
-          fontSize: 18,
+    return InkWell(
+      onTap:(){
+        Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterView()));
+      },
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.height*.02, vertical: MediaQuery.of(context).size.height*.01),
+        child: Text(
+          "Register",
+          style: TextStyle(
+          fontSize: MediaQuery.of(context).size.height*.02,
           fontWeight: FontWeight.w800,
           color: Colors.white,
+          ),
         ),
-      ),
-      decoration: BoxDecoration(
-          color: Color(0xff1681ab),
-          borderRadius: BorderRadius.circular(5)),
+        decoration: BoxDecoration(
+        color: Color(0xff1681ab),
+        borderRadius: BorderRadius.circular(5)),
+      )
     );
   }
 }
