@@ -8,7 +8,7 @@ class HomeLogo extends StatelessWidget {
     return Container(
       child: Image.asset(
         "assets/logo-color.png",
-        height: 800, width: 800
+        height: MediaQuery.of(context).size.height*.5, width: MediaQuery.of(context).size.width*.5
         )
     );
   }
