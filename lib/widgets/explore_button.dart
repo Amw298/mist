@@ -11,11 +11,11 @@ class ExploreButton extends StatelessWidget {
         Navigator.push(context, MaterialPageRoute(builder: (context) => Store()));
       },
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
+        padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.height*.02, vertical: MediaQuery.of(context).size.height*.01),
         child: Text(
           "Explore the Site",
           style: TextStyle(
-          fontSize: 18,
+          fontSize: MediaQuery.of(context).size.height*.02,
           fontWeight: FontWeight.w800,
           color: Colors.white,
           ),
