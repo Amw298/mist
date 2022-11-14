@@ -17,7 +17,7 @@ class SideBar extends StatelessWidget {
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
                 fit: BoxFit.scaleDown,
-                "assets/logo-no-background-purp.png", // replace with mist logo
+                "assets/logo-no-background-purp.png",
                 height: 55.0,
                 filterQuality: FilterQuality.high,
               ),
