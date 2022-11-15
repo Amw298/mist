@@ -14,7 +14,7 @@ class HomeView extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children:[
-          Center(child: HomeLogo()),
+          const Center(child: HomeLogo()),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.2,
             child: ExploreButton()
