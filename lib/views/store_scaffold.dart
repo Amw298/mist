@@ -38,12 +38,13 @@ class SearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      onChanged: (String s) {
+      onChanged: (String s) async {
         if(s==''){
           gm_db.clear();
         }
         if(s=='banana'){
-          gm_db.search(s);
+           await gm_db.search(s);
+          pageController.jumpToPage(2);
         }
         if(s == "clear"){
           pageController.jumpToPage(1);

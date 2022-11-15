@@ -41,7 +41,7 @@ class StoreFront extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageView(
-        controller: pageController, children: [StoreView(), LibraryView()]);
+        controller: pageController, children: [StoreView(), LibraryView(), StoreSearch()]);
   }
 }
 class StoreView extends StatefulWidget {
@@ -93,5 +93,42 @@ class _StoreViewState extends State<StoreView> {
         ],
       ),
     ]));
+  }
+}
+class StoreSearch extends StatefulWidget {
+  final List<GameButton> games = [
+    GameButton(
+      name: "banana",
+      large: true,
+      img: Image(image: AssetImage("assets/banana.png")),
+    ),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+    GameButton(),
+  ];
+
+  @override
+  State<StatefulWidget> createState() => _StoreSearchState();
+}
+
+class _StoreSearchState extends State<StoreSearch> {
+  @override
+  Widget build(BuildContext context) {
+  return  Container(
+        child: GridView.count(
+      crossAxisCount: 4,
+      children: [...gm_db.games],
+    ));
   }
 }

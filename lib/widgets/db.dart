@@ -62,7 +62,7 @@ class GameModels extends ChangeNotifier{
   List<GameButton> _games = db_game_buttons;
 
   UnmodifiableListView<GameButton> get games => UnmodifiableListView(_games);
-  void search(String string) {
+  Future<void> search(String string) async {
     List<GameButton> newgames =[];
     for(GameButton g in _games){
       if(g.name ==string){
