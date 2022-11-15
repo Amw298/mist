@@ -1,9 +1,9 @@
-import 'package:mist/widgets/game_grid.dart';
+import 'package:mist/widgets/store_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:mist/widgets/side_bar.dart';
 
 import '../widgets/db.dart';
-import 'library_view.dart';
+import 'store_scaffold.dart';
 
 class Store extends StatelessWidget {
   const Store({super.key});
@@ -17,7 +17,7 @@ class Store extends StatelessWidget {
               child: Row(
             children: [
               SideBar(),
-              const Expanded(child: LibraryView(game: gameDefault))
+              const Expanded(child: StoreScaffold(game: gameDefault))
             ],
           ))
         ]),
