@@ -33,7 +33,13 @@ class SideBar extends StatelessWidget {
               title: "Library",
               iconData: Icons.library_books,
               onTap: () {pageController.jumpToPage(1);},
-            )
+            ),
+            Spacer(),
+            _SideBarTab(
+              title: "Logout",
+              iconData: Icons.logout,
+              onTap: () {Navigator.pop(context);},
+            ),
           ],
         ));
   }
