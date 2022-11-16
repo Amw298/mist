@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mist/views/store_view.dart';
 
-class ExploreButton extends StatelessWidget {
-  const ExploreButton({super.key});
+class HomeExploreButton extends StatelessWidget {
+  const HomeExploreButton({super.key});
 
   @override
   Widget build(BuildContext context) {
