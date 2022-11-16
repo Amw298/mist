@@ -65,7 +65,7 @@ class GameModels extends ChangeNotifier{
   Future<void> search(String string) async {
     List<GameButton> newgames =[];
     for(GameButton g in _games){
-      if(g.name ==string){
+      if(g.name.contains(string)){
         newgames.add(g);
       }
     }

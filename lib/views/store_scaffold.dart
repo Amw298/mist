@@ -31,9 +31,7 @@ class _StoreScaffoldState extends State<StoreScaffold> {
 }
 
 class SearchBar extends StatelessWidget {
-  const SearchBar({
-    Key? key,
-  }) : super(key: key);
+  const SearchBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +61,6 @@ class SearchBar extends StatelessWidget {
             borderSide: BorderSide(color: Theme.of(context).hintColor)),
         focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(30),
-
             borderSide: BorderSide(color: Theme.of(context).hintColor)),
         hintText: 'Search for games...',
         hintStyle: Theme.of(context).textTheme.bodyText1,
