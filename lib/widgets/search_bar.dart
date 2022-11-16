@@ -1,36 +1,8 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mist/widgets/db.dart';
-import 'package:mist/widgets/game_button.dart';
-import 'package:mist/widgets/launch_game_button.dart';
-import 'package:mist/widgets/store_pages.dart';
 
-class StoreScaffold extends StatefulWidget {
-  const StoreScaffold({super.key, required this.game});
-
-  final Game game;
-  @override
-  State<StatefulWidget> createState() => _StoreScaffoldState();
-}
-
-class _StoreScaffoldState extends State<StoreScaffold> {
-  @override
-  Widget build(BuildContext context) {
-    var appbarcolor = Theme.of(context).backgroundColor;
-    return Scaffold(
-      appBar: AppBar(
-        leadingWidth: MediaQuery.of(context).size.width * .4,
-        leading: SearchBar(),
-        actions: [LaunchGameButton()],
-        backgroundColor: appbarcolor,
-        foregroundColor: appbarcolor,
-        shadowColor: Colors.transparent,
-      ),
-      body: Container(
-          color: Theme.of(context).backgroundColor, child: StoreFront()),
-    );
-  }
-}
+import '../controllers/backend.dart';
 
 class SearchBar extends StatelessWidget {
   const SearchBar({super.key});
@@ -44,10 +16,10 @@ class SearchBar extends StatelessWidget {
         }
         if(s=='banana'){
            await gm_db.search(s);
-          pageController.jumpToPage(2);
+          StorePageController.jumpToPage(2);
         }
         if(s == "clear"){
-          pageController.jumpToPage(1);
+          StorePageController.jumpToPage(1);
         }
         
       },

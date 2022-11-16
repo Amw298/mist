@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mist/views/home_view.dart';
 import 'package:mist/views/login_view.dart';
 import 'package:mist/views/store_view.dart';
+import '../views/store_view.dart';
 
 class RegisterButton extends StatelessWidget {
   const RegisterButton({super.key});

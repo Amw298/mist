@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mist/widgets/db.dart';
+import 'package:mist/controllers/backend.dart';
 
 class GameButton extends StatelessWidget {
   final Image img;

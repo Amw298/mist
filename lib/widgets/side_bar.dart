@@ -1,5 +1,5 @@
 import 'package:mist/views/home_view.dart';
-import 'package:mist/widgets/db.dart';
+import 'package:mist/controllers/backend.dart';
 import 'package:mist/widgets/game_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -27,12 +27,12 @@ class SideBar extends StatelessWidget {
             _SideBarTab(
               title: "Store",
               iconData: Icons.store,
-              onTap: () {pageController.jumpToPage(0);},
+              onTap: () {StorePageController.jumpToPage(0);},
             ),
             _SideBarTab(
               title: "Library",
               iconData: Icons.library_books,
-              onTap: () {pageController.jumpToPage(1);},
+              onTap: () {StorePageController.jumpToPage(1);},
             ),
             Spacer(),
             _SideBarTab(

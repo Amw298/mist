@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mist/views/store_view.dart';
 
+import '../views/store_view.dart';
+
 class HomeExploreButton extends StatelessWidget {
   const HomeExploreButton({super.key});
 

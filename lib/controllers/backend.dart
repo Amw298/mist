@@ -1,9 +1,9 @@
 import 'dart:collection';
 
 import 'package:flutter/cupertino.dart';
-import 'package:mist/views/store_scaffold.dart';
+import 'package:mist/views/store_view.dart';
 
-import 'game_button.dart';
+import '../widgets/game_button.dart';
 
 class Game {
   final Image img;
@@ -15,7 +15,7 @@ const gameDefault = Game(
     img: Image(
   image: AssetImage('assets/testinion.jpg'),
 ));
-PageController pageController = PageController();
+PageController StorePageController = PageController();
 const logo = Image(image: AssetImage('assets/testinion.jpg'));
 const db_games = [
   Game(

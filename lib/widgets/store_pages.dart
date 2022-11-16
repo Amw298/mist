@@ -1,5 +1,5 @@
 
-import 'package:mist/widgets/db.dart';
+import 'package:mist/controllers/backend.dart';
 import 'package:mist/widgets/game_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +41,7 @@ class StoreFront extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageView(
-        controller: pageController, children: [StoreView(), LibraryView(), StoreSearch()]);
+        controller: StorePageController, children: [StoreView(), LibraryView(), StoreSearch()]);
   }
 }
 class StoreView extends StatefulWidget {

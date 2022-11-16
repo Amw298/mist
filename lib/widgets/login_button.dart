@@ -3,6 +3,8 @@ import 'package:mist/views/home_view.dart';
 import 'package:mist/views/login_view.dart';
 import 'package:mist/views/store_view.dart';
 
+import '../views/store_view.dart';
+
 class LoginButton extends StatelessWidget {
   const LoginButton({super.key});
 
