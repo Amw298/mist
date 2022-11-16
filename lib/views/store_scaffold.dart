@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mist/widgets/db.dart';
 import 'package:mist/widgets/game_button.dart';
+import 'package:mist/widgets/launch_game_botton.dart';
 import 'package:mist/widgets/store_pages.dart';
 
 class StoreScaffold extends StatefulWidget {
@@ -20,6 +21,7 @@ class _StoreScaffoldState extends State<StoreScaffold> {
       appBar: AppBar(
         leadingWidth: MediaQuery.of(context).size.width * .4,
         leading: SearchBar(),
+        actions: [LaunchGameButton()],
         backgroundColor: appbarcolor,
         foregroundColor: appbarcolor,
         shadowColor: Colors.transparent,
