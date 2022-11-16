@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mist/widgets/explore_button.dart';
+import 'package:mist/widgets/home_explore_button.dart';
+import 'package:mist/widgets/login_button.dart';
 import 'package:mist/widgets/userinfo_textbox.dart';
 import 'package:mist/widgets/home_logo.dart';
 
@@ -31,7 +32,11 @@ class LoginView extends StatelessWidget {
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.45,
             child: UserInfoText("Please enter your password")
-          )          
+          ),
+          Positioned(
+            bottom: MediaQuery.of(context).size.height * 0.35,
+            child: LoginButton()
+          )           
         ]
       )
     );
