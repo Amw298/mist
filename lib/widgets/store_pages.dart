@@ -83,7 +83,7 @@ class _StoreViewState extends State<StoreView> {
           child: gm_db.games[0],
           color: Colors.amber,
           height: MediaQuery.of(context).size.height *
-              .5, // amount of height you want or the widget you like to include with `ConstrainedBox`
+              .5, 
         ),
       ),
       SliverGrid.count(

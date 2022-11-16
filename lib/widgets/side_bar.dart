@@ -45,11 +45,10 @@ class _SideBarTab extends StatelessWidget {
   final VoidCallback onTap;
 
   const _SideBarTab({
-    Key? key,
     required this.iconData,
     required this.title,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -60,8 +59,7 @@ class _SideBarTab extends StatelessWidget {
         size: 30.0,
       ),
       title: Text(title,
-          style: Theme.of(context).textTheme.bodyText1,
-          overflow: TextOverflow.ellipsis),
+          style: Theme.of(context).textTheme.bodyText1),
       onTap: onTap,
     );
   }

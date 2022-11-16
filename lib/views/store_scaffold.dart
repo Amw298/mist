@@ -50,7 +50,7 @@ class SearchBar extends StatelessWidget {
           pageController.jumpToPage(1);
         }
         
-      },// this is where we can add the drop down
+      },
       autofocus: true,
       cursorColor: Colors.white,
       style: Theme.of(context).textTheme.bodyText1,
