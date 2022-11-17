@@ -3,6 +3,12 @@
 
 ## Execution of the Software:
 
+* Clone the project to your machine.
+* While in the "mist" project folder run the command "flutter run" and choose chrome
+* Press the "explore the page" button to get to the bulk of the program.
+* You can switch between library and store view by pressing the buttons on the side bar labeled as such.
+* You can search for the banana by typing "banana" in the search bar.
+* You can launch your favorite game by pressing the "Launch Game" button.
 
 ## Explanations of the Tasks:
 
