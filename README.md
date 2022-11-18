@@ -7,23 +7,23 @@
 
 
 ## Explanations of the Tasks:
-To access the store view:
+#### To access the store view:
 * There are three ways that you can access the store from the homepage:
     * Pressing the "Explore The Site" button will alert a controller behind the widget to switch to the store view.
     * Pressing the "Sign in" button will alert a controller behind the widget to switch to the login view. Here you can interact with the two text fields to input their email and password for signing in. The "Sign in" button can be pressed at any time to alert a controller to redirect the users and switch to the store view. There is work in the future that needs to be done to have a controller check if the text input is null. If one is null, the "Sign in" button will be disabled and a toast will pop up to notify users that they need to put in their information in order to access the Store. Although not yet implemented, the plan is to also have a tab on top with buttons that users can interact with to switch between the "LoginView", "HomeView" (homepage), and "RegistrationView" if needed. Currently, the only way to switch between the LoginView and RegisterView is to refresh to the Homeview.
     * Pressing the "Register" button will alert a controller behind the widget to switch to the register view. Here you can interact with the text fields to input information for creating an account. THe plan for the RegisterView is the same as the LoginView. Additionally, the placeholder texts for the text fields will be replaced with top-align labels.
 
-To search games:
+#### To search games:
 * Press the "explore the page" button to get to the bulk of the program.
 * You can switch between library and store view by pressing the buttons on the side bar labeled as such.
 * You can search for the banana by typing "banana" in the search bar. (you should see the banana appear in the view)
 
-To browse games:
+#### To browse games:
 * Press the "explore the page" button to get to the bulk of the program.
 * You can switch between library and store view by pressing the buttons on the side bar labeled as such.
 * You can scroll in the different views to see all of the games (test images).
 
-To play a game:
+#### To play a game:
 * You can launch your favorite game by pressing the "Launch Game" button in the top right of the store/library page
 
 
