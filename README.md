@@ -8,11 +8,19 @@
 
 
 ## Explanations of the Tasks:
-after running:
+
+To search games:
 * Press the "explore the page" button to get to the bulk of the program.
 * You can switch between library and store view by pressing the buttons on the side bar labeled as such.
-* You can search for the banana by typing "banana" in the search bar.
-* You can launch your favorite game by pressing the "Launch Game" button.
+* You can search for the banana by typing "banana" in the search bar. (you should see the banana appear in the view)
+
+To browse games:
+* Press the "explore the page" button to get to the bulk of the program.
+* You can switch between library and store view by pressing the buttons on the side bar labeled as such.
+* You can scroll in the different views to see all of the games (test images).
+
+To play a game:
+* You can launch your favorite game by pressing the "Launch Game" button in the top right of the store/library page
 
 
 ## Change in Architecture Pattern:
