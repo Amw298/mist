@@ -4,7 +4,8 @@ import 'package:mist/views/login_view.dart';
 class UserInfoText extends StatelessWidget {
   final String hintText;
   final double width;
-  const UserInfoText(this.hintText,{super.key, this.width = .25,});
+
+  const UserInfoText(this.hintText, {super.key, this.width = 0.25});
 
   @override
   Widget build(BuildContext context) {
