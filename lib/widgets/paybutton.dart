@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mist/views/game_description_view.dart';
+import 'package:mist/views/home_view.dart';
+import 'package:mist/views/login_view.dart';
 import 'package:mist/views/store_view.dart';
-import 'package:mist/widgets/store_pages.dart';
 
 import '../views/store_view.dart';
 
-class HomeExploreButton extends StatelessWidget {
-  const HomeExploreButton({super.key});
+class PayButton extends StatelessWidget {
+  const PayButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class HomeExploreButton extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.height*.02, vertical: MediaQuery.of(context).size.height*.01),
         child: Text(
-          "Explore the Site",
+          "Complete Transaction",
           style: TextStyle(
           fontSize: MediaQuery.of(context).size.height*.02,
           fontWeight: FontWeight.w800,

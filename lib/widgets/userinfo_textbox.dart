@@ -3,13 +3,15 @@ import 'package:mist/views/login_view.dart';
 
 class UserInfoText extends StatelessWidget {
   final String hintText;
-  const UserInfoText(this.hintText);
+  final double width;
+
+  const UserInfoText(this.hintText, {super.key, this.width = 0.25});
 
   @override
   Widget build(BuildContext context) {
     return Row(children: <Widget>[
       SizedBox(
-          width: MediaQuery.of(context).size.width * 0.25,
+          width: MediaQuery.of(context).size.width * width,
           height: MediaQuery.of(context).size.height * 0.1,
           child: TextField(
             cursorColor: Colors.black,
