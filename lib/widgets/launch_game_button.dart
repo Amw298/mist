@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mist/views/game_description_view.dart';
+
+import '../views/pay_view.dart';
 
 class LaunchGameButton extends StatelessWidget {
   const LaunchGameButton({super.key});
@@ -9,7 +12,7 @@ class LaunchGameButton extends StatelessWidget {
     return InkWell(
         onTap: () {
           print("Launches Game!");
-          //Navigator.push(context, MaterialPageRoute(builder: (context) => LoginView()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => GameDescription()));
         },
         child: Container(
           padding: EdgeInsets.symmetric(
