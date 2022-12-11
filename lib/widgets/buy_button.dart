@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class LaunchGameButton extends StatelessWidget {
-  const LaunchGameButton({super.key});
+class BuyButton extends StatelessWidget {
+  const BuyButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,13 +13,15 @@ class LaunchGameButton extends StatelessWidget {
         },
         child: Container(
           padding: EdgeInsets.symmetric(
-              horizontal: MediaQuery.of(context).size.height * .02,
-              vertical: MediaQuery.of(context).size.height * .02),
+            horizontal: MediaQuery.of(context).size.height * .02,
+            vertical: MediaQuery.of(context).size.height * .02
+          ),
           decoration: BoxDecoration(
-              border: Border.all(color: Colors.white, width: 5),
-              color: appbarcolor, borderRadius: BorderRadius.circular(5)),
+            border: Border.all(color: Colors.white, width: 5),
+            color: appbarcolor, borderRadius: BorderRadius.circular(5)
+          ),
           child: Text(
-            "Launch Game",
+            "Buy Game",
             style: TextStyle(
               fontSize: MediaQuery.of(context).size.height * .02,
               fontWeight: FontWeight.w800,
