@@ -97,6 +97,13 @@ class _GameDescription extends State<GameDescription> {
             right: MediaQuery.of(context).size.width*.1,
             top: MediaQuery.of(context).size.height*.6,
             child: playableOrNotPlayable(),
+          ),
+          Positioned(
+            height: 75,
+            width: 75,
+            right: MediaQuery.of(context).size.width*.02,
+            top: MediaQuery.of(context).size.height*.02,
+            child: const BackButton(),
           )
         ],
       ),
