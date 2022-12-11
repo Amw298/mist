@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mist/views/gameDescription_view.dart';
 import 'package:mist/views/store_view.dart';
 
 class ExploreButton extends StatelessWidget {
@@ -8,7 +9,7 @@ class ExploreButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap:(){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => Store()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => GameDescription()));
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.height*.02, vertical: MediaQuery.of(context).size.height*.01),
