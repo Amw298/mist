@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mist/views/gameDescription_view.dart';
+import 'package:mist/views/game_description_view.dart';
 import 'package:mist/views/store_view.dart';
 import 'package:mist/widgets/store_pages.dart';
 
