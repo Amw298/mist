@@ -1,8 +1,6 @@
 import 'dart:collection';
-
 import 'package:flutter/cupertino.dart';
 import 'package:mist/views/store_view.dart';
-
 import '../widgets/game_button.dart';
 
 class Game {
