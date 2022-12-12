@@ -12,7 +12,7 @@ class LaunchGameButton extends StatelessWidget {
     return InkWell(
         onTap: () {
           print("Launches Game!");
-          Navigator.push(context, MaterialPageRoute(builder: (context) => GameDescription()));
+          //Navigator.push(context, MaterialPageRoute(builder: (context) => GameDescription()));
         },
         child: Container(
           padding: EdgeInsets.symmetric(

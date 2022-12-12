@@ -3,6 +3,7 @@ import 'package:mist/views/home_view.dart';
 import 'package:mist/views/login_view.dart';
 import 'package:mist/views/store_view.dart';
 
+import '../controllers/backend.dart';
 import '../views/store_view.dart';
 
 class PayButton extends StatelessWidget {
@@ -11,8 +12,10 @@ class PayButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap:(){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => Store()));
+      onTap:() async {
+        await gm_db.buy(currentgame);
+        Navigator.pop(context);
+        Navigator.pop(context);
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.height*.02, vertical: MediaQuery.of(context).size.height*.01),

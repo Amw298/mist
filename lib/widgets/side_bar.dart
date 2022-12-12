@@ -27,12 +27,17 @@ class SideBar extends StatelessWidget {
             _SideBarTab(
               title: "Store",
               iconData: Icons.store,
-              onTap: () {StorePageController.jumpToPage(0);},
+              onTap: () {
+                gm_db.games[0].setLarge(true);
+                StorePageController.jumpToPage(0);},
             ),
             _SideBarTab(
               title: "Library",
               iconData: Icons.library_books,
-              onTap: () {StorePageController.jumpToPage(1);},
+              
+              onTap: () {
+                gm_db.games[0].setLarge(false);
+                StorePageController.jumpToPage(1);},
             ),
             Spacer(),
             _SideBarTab(

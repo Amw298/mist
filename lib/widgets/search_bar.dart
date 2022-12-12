@@ -10,18 +10,15 @@ class SearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      onChanged: (String s) async {
+      onSubmitted: (String s) async {
         if(s==''){
           gm_db.clear();
-        }
-        if(s=='banana'){
-           await gm_db.search(s);
+          StorePageController.jumpToPage(0);
+
+        }else{
+          await gm_db.search(s);
           StorePageController.jumpToPage(2);
         }
-        if(s == "clear"){
-          StorePageController.jumpToPage(1);
-        }
-        
       },
       autofocus: true,
       cursorColor: Colors.white,

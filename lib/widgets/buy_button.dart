@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../views/pay_view.dart';
+
 class BuyButton extends StatelessWidget {
   const BuyButton({super.key});
 
@@ -8,8 +10,7 @@ class BuyButton extends StatelessWidget {
     var appbarcolor = Theme.of(context).backgroundColor;
     return InkWell(
         onTap: () {
-          print("Launches Game!");
-          //Navigator.push(context, MaterialPageRoute(builder: (context) => LoginView()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => PayView()));
         },
         child: Container(
           padding: EdgeInsets.symmetric(
