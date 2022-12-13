@@ -9,8 +9,9 @@ class HomeTopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
+    return Container(
+      height: 50,
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
@@ -36,6 +37,7 @@ class HomeTopBar extends StatelessWidget {
                 ],
               )),
         ],
-      );
+      )
+    );
   }
 }
