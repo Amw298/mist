@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mist/controllers/backend.dart';
 import 'package:mist/views/home_view.dart';
 import 'package:mist/views/login_view.dart';
 import 'package:mist/views/store_view.dart';
@@ -12,6 +13,7 @@ class LoginButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap:(){
+        gm_db.clear();
         Navigator.push(context, MaterialPageRoute(builder: (context) => Store()));
       },
       child: Container(

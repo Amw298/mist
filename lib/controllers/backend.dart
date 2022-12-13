@@ -87,7 +87,9 @@ class GameModels extends ChangeNotifier{
   }
 
   void clear(){
+
        _games = db_game_buttons;
+       _games[0].large = true;
     notifyListeners();
   }
 
