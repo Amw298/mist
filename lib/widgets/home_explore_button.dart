@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mist/views/game_description_view.dart';
 import 'package:mist/views/store_view.dart';
+import 'package:mist/views/store_view_guest.dart';
 import 'package:mist/widgets/store_pages.dart';
 
 import '../views/store_view.dart';
@@ -12,7 +13,7 @@ class HomeExploreButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap:(){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => Store()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => StoreGuest()));
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.height*.02, vertical: MediaQuery.of(context).size.height*.01),
