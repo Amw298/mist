@@ -35,7 +35,7 @@ class SideBarGuest extends StatelessWidget {
             _SideBarGuestTab(
               title: "Sign In / Register",
               iconData: Icons.logout,
-              onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context) => HomeView()));},
+              onTap: () {Navigator.pop(context);},
             ),
           ],
         ));
