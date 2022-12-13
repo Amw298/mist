@@ -41,3 +41,23 @@ class HomeTopBar extends StatelessWidget {
     );
   }
 }
+
+class _HomeBarItem extends StatelessWidget {
+  final String title;
+  final Widget view;
+  const _HomeBarItem(this.title, this.view);
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+        onTap: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => view));
+        },
+        child: Text(
+          title,
+          style:
+              TextStyle(fontSize: 18, color: Color.fromARGB(180, 49, 146, 184)),
+        ));
+  }
+}
