@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mist/widgets/home_explore_button.dart';
-import 'package:mist/widgets/home_top_bar.dart';
 import 'package:mist/widgets/login_button.dart';
 import 'package:mist/widgets/userinfo_textbox.dart';
 import 'package:mist/widgets/home_logo.dart';
-import 'package:mist/widgets/home_top_bar.dart';
-import 'package:mist/widgets/line.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -17,10 +14,6 @@ class LoginView extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children:[
-          Positioned(
-            top: MediaQuery.of(context).size.height * 0.07,
-            child: HomeTopBar()
-          ),
           Positioned(
             top: MediaQuery.of(context).size.height * 0.20,
             child: Text(
@@ -34,11 +27,11 @@ class LoginView extends StatelessWidget {
           ),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.55,
-            child: UserInfoText("Email Address")
+            child: UserInfoText("Please enter your email address")
           ),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.45,
-            child: UserInfoText("Password")
+            child: UserInfoText("Please enter your password")
           ),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.35,
