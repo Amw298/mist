@@ -3,6 +3,7 @@ import 'package:mist/widgets/home_explore_button.dart';
 import 'package:mist/widgets/register_button.dart';
 import 'package:mist/widgets/userinfo_textbox.dart';
 import 'package:mist/widgets/home_logo.dart';
+import 'package:mist/widgets/home_top_bar.dart';
 
 class RegisterView extends StatelessWidget {
   const RegisterView({super.key});
@@ -14,6 +15,10 @@ class RegisterView extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children:[
+          Positioned(
+            top: MediaQuery.of(context).size.height * 0.07,
+            child: HomeTopBar()
+          ),
           Positioned(
             top: MediaQuery.of(context).size.height * 0.20,
             child: Text(
@@ -27,19 +32,19 @@ class RegisterView extends StatelessWidget {
           ),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.55,
-            child: UserInfoText("Please enter your email address")
+            child: UserInfoText("Email Address")
           ),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.45,
-            child: UserInfoText("Please enter your password")
+            child: UserInfoText("Password")
           ),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.35,
-            child: UserInfoText("Please re-enter your password")
+            child: UserInfoText("Re-type Password")
           ),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.25,
-            child: UserInfoText("Please enter your date of birth")
+            child: UserInfoText("Date/Month/Year")
           ),
           Positioned(
             bottom: MediaQuery.of(context).size.height * 0.15,
