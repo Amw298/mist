@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mist/views/login_view.dart';
 import 'package:mist/views/register_view.dart';
 import 'package:mist/views/store_view.dart';
-import 'package:mist/views/store_view_guest.dart';
 
 class HomeTopBar extends StatelessWidget {
   const HomeTopBar({super.key});
@@ -33,7 +32,7 @@ class HomeTopBar extends StatelessWidget {
                     width: MediaQuery.of(context).size.width * 0.10,
                     height: MediaQuery.of(context).size.height * 0.10,
                   ),
-                  _HomeBarItem('Explore      ', StoreGuest()),
+                  _HomeBarItem('Explore      ', Store()),
                 ],
               )),
         ],
