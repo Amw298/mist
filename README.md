@@ -16,7 +16,7 @@
 #### To search games:
 * Press the "explore the page" button to get to the bulk of the program.
 * You can switch between library and store view by pressing the buttons on the side bar labeled as such.
-* You can search for the banana by typing "banana" in the search bar. (you should see the banana appear in the view)
+* You can search for the banana by typing "Slime" in the search bar and pressing enter. (you should see Slime Rampage appear in the view)
 
 #### To browse games:
 * Press the "explore the page" button to get to the bulk of the program.
@@ -25,6 +25,10 @@
 
 #### To play a game:
 * You can launch your favorite game by pressing the "Launch Game" button in the top right of the store/library page
+* Also, you can launch a game by pressing it in the game description view
+
+### To Buy a game:
+* Find a game you do not own and click on it. You will be able to press "Buy Game" to purchase a game.
 
 
 ## Change in Architecture Pattern:
