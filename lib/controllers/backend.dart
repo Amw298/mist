@@ -76,7 +76,7 @@ class GameModels extends ChangeNotifier{
     List<GameButton> newgames =[];
     
     for(GameButton g in _games){
-      if(g.index ==index){
+      if(g.index == currentgame){
         g.gameDescription.owned =true;
       }
       newgames.add(g);
@@ -98,6 +98,7 @@ class GameModels extends ChangeNotifier{
 int currentgame = 14;
 List<GameButton> db_game_buttons = [
     GameButton(index: 0,
+    
       gameDescription: GameDescription(),large: true,),
     pizzagame,
     GameButton(index: 1,
@@ -168,13 +169,14 @@ List<GameButton> db_game_buttons = [
   );
 
     GameButton pizzagame = GameButton(
+      index: 16,
       name: "pizza",
       large: false,
       img: const Image(image: AssetImage("assets/pizzagame.jpg")),
       gameDescription:GameDescription(description: lorem,
       images: ["assets/pizzaBanner.png","assets/pizzagame.jpg","assets/pizzagame.jpg","assets/pizzagame.jpg"],
       playable: true,
-      owned: true,
+      owned:false,
       ),
       );
 

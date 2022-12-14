@@ -32,7 +32,7 @@ class GameButton extends StatelessWidget {
       return Center(
           child: InkWell(
               onTap: () {
-                currentgame =index;
+                currentgame = index;
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => gameDescription));
               },
