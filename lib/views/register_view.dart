@@ -43,7 +43,19 @@ class RegisterView extends StatelessWidget {
             child: UserInfoText("Re-type Password")
           ),
           Positioned(
-            bottom: MediaQuery.of(context).size.height * 0.25,
+            bottom: MediaQuery.of(context).size.height * 0.335,
+            left: MediaQuery.of(context).size.height * 0.68,
+            child: Text(
+              'Date of Birth:',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: MediaQuery.of(context).size.height * 0.02,
+                color: Color(0xff1681ab)
+              ),
+            )
+          ),
+          Positioned(
+            bottom: MediaQuery.of(context).size.height * 0.23,
             child: UserInfoText("Date/Month/Year")
           ),
           Positioned(
