@@ -27,7 +27,8 @@
 #### To browse games:
 * Press the "explore the page" button to get to the bulk of the program.
 * You can switch between library and store view by pressing the buttons on the side bar labeled as such.
-* You can scroll in the different views to see all of the games (test images).
+* You can scroll in the different views to see all of the games (test images). 
+* You can click on a game to see its description, some images, and whether its playable on your machine.
 
 #### To play a game:
 * You can launch your favorite game by pressing the "Launch Game" button in the top right of the store/library page
