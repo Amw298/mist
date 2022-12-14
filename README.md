@@ -28,7 +28,7 @@
 * Also, you can launch a game by pressing it in the game description view
 
 ### To Buy a game:
-* Find a game you do not own and click on it. You will be able to press "Buy Game" to purchase a game.
+* Find a game in the store you do not own and click on it. You will be able to press "Buy Game" to purchase a game in the game description view.
 
 
 ## Change in Architecture Pattern:
