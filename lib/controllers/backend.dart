@@ -68,6 +68,7 @@ class GameModels extends ChangeNotifier{
         newgames.add(g);
       }
     }
+    newgames[0].large =false;
     _games = newgames;
     notifyListeners();
   }
