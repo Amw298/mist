@@ -27,7 +27,7 @@
 * You can launch your favorite game by pressing the "Launch Game" button in the top right of the store/library page
 * Also, you can launch a game by pressing it in the game description view
 
-### To Buy a game:
+#### To Buy a game:
 * Find a game in the store you do not own and click on it. You will be able to press "Buy Game" to purchase a game in the game description view.
 
 
